@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Encriptador e Desencriptador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="./style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100&display=swap');
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+            <img class="logo" src="./img/logoalura.png" alt="Logo da Alura">
+        </header>
+
+    
+    <main>
+
+        <section>
+            <textarea autofocus="true" id="entrada" class="texto-entrada"  placeholder="Digite seu texto aqui"></textarea>
+            <div>
+                <div class="aviso-info">
+                    <span class="aviso"><img src="./img/aviso.png" alt="Aviso"></span>
+                    <span>Apenas letras minúsculas e sem acentos.</span>
+                </div>
+
+
+                <div class="buttons">
+                  
+                    <button id="btn-criptografar">Criptografar</button>
+                    <button id="btn-descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        
+        <aside>
+            <div id="resultado" class="mensagem">
+                <img src="./img/lupa.png" class="boneco-lupa" alt="Boneco com lupa na mão">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografa.</p>
+            </div>
+            <div id="resultado-textarea">
+                <textarea readonly id="saida" ></textarea>
+                <button id="copiar">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; Copyright Leticia Silva - 2023</p>
+    </footer>
+
+
+    <script src="./script.js">
+
+    </script>
+    </body>
+</html>
